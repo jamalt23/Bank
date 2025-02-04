@@ -1,0 +1,1238 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css" integrity="sha512-Rp0yZ3NMh1xOUZ4VHYggmX4pq4ZJdpcOETH03qBD5qNDsqTBw1MzUnX0T5PcTJmr2mNTOmtbxsHaGwzjylNpHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/selectric.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <link rel="stylesheet" href="css/output.css" />
+        <title>Bank</title>
+    </head>
+    <body>
+        <header class="sticky-top bg-body">
+            <div class="container-fluid bg-[#f6f7f8]">
+                <div class="row align-items-center h-[50px]">
+                    <div class="col-lg-9 col-xl-10 d-none d-lg-flex gap-4 text-[.875rem] fw-light">
+                        <a href="https://abb-bank.az/en/haqqimizda" class="text-[#666]">About us</a>
+                        <a href="https://abb-bank.az/en/sustainability" class="text-[#666]">Sustainability reports</a>
+                        <a href="https://abb-bank.az/en/tarifler" class="text-[#666]">Charges and Fees</a>
+                        <a href="https://abb-bank.az/en/xeberler" class="text-[#666]">News</a>
+                        <a href="https://abb-bank.az/en/satinalmalar" class="text-[#666]">Procurement</a>
+                        <a href="https://abb-bank.az/en/xidmet-shebekesi" class="text-[#666]">Service network</a>
+                        <a href="https://abb-bank.az/en/research" class="text-[#666]">Research</a>
+                        <a href="https://abb-bank.az/en/investorlarla-elaqe" class="text-[#666]">Investor Relations</a>
+                    </div>
+
+                    <!-- For Mobile -->
+                    <div class="col-7 d-lg-none">
+                        <label class="d-inline-flex fw-semibold">
+                            <select tabindex="-1">
+                                <option data-url="https://abb-bank.az/en/ferdi">Personal</option>
+                                <option data-url="https://abb-bank.az/en/kicik-biznes">Small Business</option>
+                                <option data-url="https://abb-bank.az/en/kicik-ve-orta-biznes">SME</option>
+                                <option data-url="https://abb-bank.az/en/korporativ">Corporate</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="col-5 col-lg-3 col-xl-2 d-flex align-items-center justify-content-end gap-2">
+                        <span class="d-flex align-items-center me-lg-1 cursor-p text-[.875rem] fw-light">
+                            <i class="far fa-search text-[#9F9F9F]"></i>
+                            <span class="d-none d-lg-inline-block text-[#666] ms-2">Search</span>
+                        </span>
+
+                        <span>
+                            <select class="text-[#666]" name="lang" aria-label="language" id="js-selectric-lang" tabindex="-1">
+                                <option value="az" data-url="https://abb-bank.az/az/ferdi">AZ</option>
+                                <option selected="" class="d-none" value="uk" data-url="https://abb-bank.az/en/ferdi">EN</option>
+                                <option value="ru" data-url="https://abb-bank.az/ru/ferdi">RU</option>
+                            </select>
+                        </span>
+
+                        <a href="tel:937" class="d-flex align-items-center text-[.875rem] ms-1 gap-1">
+                            <i class="fas fa-phone text-[#666]"></i>
+                            <span class="fw-semibold text-[#666]">937</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-primary" href="#">
+                        <i class="fas fa-building-columns me-1"></i>
+                        Bank
+                    </a>
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end vw-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="offcanvas-title navbar-brand text-primary fs-5" id="offcanvasNavbarLabel">
+                                <i class="fas fa-building-columns me-1"></i>
+                                Bank
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-0">
+                            <div class="d-none d-lg-block w-100 py-3">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-9 col-xl-8 d-flex align-items-center">
+                                        <div class="ms-5 mb-0 breadcrumb d-flex text-[#262626] fw-medium">
+                                            <a href="https://abb-bank.az/en/ferdi" class="breadcrumb-item"> Personal </a>
+                                            <a href="https://abb-bank.az/en/kicik-biznes" class="opacity-50 breadcrumb-item"> Small Business </a>
+                                            <a href="https://abb-bank.az/en/kicik-ve-orta-biznes" class="opacity-50 breadcrumb-item"> SME </a>
+                                            <a href="https://abb-bank.az/en/korporativ" class="opacity-50 breadcrumb-item"> Corporate </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-xl-4 d-none d-lg-flex justify-content-end">
+                                        <a href="https://careers.abb-bank.az/" target="_blank" class="d-flex align-items-center justify-content-end mr-4">
+                                            <img src="img/icons/career-portal.svg" alt="" />
+                                            <span class="fw-semibold text-primary ms-2">Career portal</span>
+                                        </a>
+
+                                        <a href="https://cb.abb-bank.az/login/en" class="d-flex align-items-center justify-content-end">
+                                            <img src="img/icons/internet-banking.svg" alt="" />
+                                            <span class="fw-semibold text-primary ms-2">Internet Banking</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-lg-none">
+                                <a class="btn btn-primary w-100 rounded-0 d-lg-none mb-2" href="#">
+                                    <img src="img/icons/internet-banking.svg" alt="" />
+                                    Internet banking
+                                </a>
+                                <a class="btn btn-primary w-100 rounded-0 d-lg-none" href="#">
+                                    <img src="img/icons/career-portal.svg" alt="" />
+                                    Career portal
+                                </a>
+                                <div class="d-flex overflow-auto gap-3 scrollbar d-lg-none p-3">
+                                    <a class="p-3" href="#">About us</a>
+                                    <a class="p-3" href="#">Sustainability reports</a>
+                                    <a class="p-3" href="#">Charges and Fees</a>
+                                    <a class="p-3" href="#">News</a>
+                                    <a class="p-3" href="#">Procurement</a>
+                                    <a class="p-3" href="#">Service network</a>
+                                    <a class="p-3" href="#">Research</a>
+                                    <a class="p-3" href="#">Investor Relations</a>
+                                </div>
+                                <div class="accordion accordion-flush d-lg-none" id="navbarAccordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse1" aria-expanded="true" aria-controls="navCollapse1">Cards</button>
+                                        </h2>
+                                        <div id="navCollapse1" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/ferdi/debet-kartlari">Debit cards</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kredit-kartlari">Credit cards</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kartlar/personalizasiya">Validation process for TamKart debit cards</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse2" aria-expanded="true" aria-controls="navCollapse2">Loans</button>
+                                        </h2>
+                                        <div id="navCollapse2" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://kredit.abb-bank.az/en/cash-loan?utm_source=abb-bank.az&amp;utm_medium=online-loan&amp;utm_campaign=cash-loan">Get a loan online</a>
+                                                    <a href="https://abb-bank.az/en/avans-kredit-xetti">Advance credit line</a>
+                                                    <a href="https://kredit.abb-bank.az/en/cash-loan?utm_source=abb-bank.az&amp;utm_medium=salary&amp;utm_campaign=cash-loan">Cash loan</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kreditler/avtomobil-krediti">Car loan</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kreditler/emanetci-kredit-limiti">Credit limit for depositors</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kreditler/emanetci-nagd-krediti">Cash loan for depositors</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kreditler/kart-uzre-kredit-limiti">Credit card limit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse3" aria-expanded="true" aria-controls="navCollapse3">Online services</button>
+                                        </h2>
+                                        <div id="navCollapse3" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://ibar.az/en/ferdi/bank-24-7/iba-mobile">ABB mobile - Mobile Bank</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/bank-24-7/abb-business-internet-bank">ABB Business Internet Bank</a>
+                                                    <a href="https://randevu.abb-bank.az/">R@ndevu</a>
+                                                    <a href="https://abb-bank.az/en/onlayn-xidmetler/arayis-sifaris-edin">Order a certificate of account status</a>
+                                                    <a href="https://ibabankpayment.3dsecure.az/en">Repay your loan</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/bank-24-7/atm">ATM</a>
+                                                    <a href="https://abb-bank.az/en/xidmetinizdeyik">We are at your service!</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/bank-24-7/odenis-terminali">Payment terminal</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/bank-24-7/cash-in-atmi">Cash-In ATM</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/bank-24-7/melumat-merkezi">Call Center 24/7</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/elektron-xidmetler">FAQ E-services</a>
+                                                    <a href="https://abb-bank.az/en/iane-et">Donate</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse4" aria-expanded="true" aria-controls="navCollapse4">Cashback</button>
+                                        </h2>
+                                        <div id="navCollapse4" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/ferdi/kesbek/faydali-kesbek">"Faydalı cashback"</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kesbek/qaygicash-klubu">QayğıCash club</a>
+                                                    <a href="https://abb-bank.az/en/fayda-max">"Fayda Max"</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/kesbek/avtomatik-endirim">Automatic discount</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse5" aria-expanded="true" aria-controls="navCollapse5">Deposits</button>
+                                        </h2>
+                                        <div id="navCollapse5" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/ferdi/depozitler/klassik-emaneti">"Classic" term deposit</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/depozitler/digidepozit">DigiDeposit</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/depozitler/emanetin-sigortalanmasi">Deposit insurance</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/depozitler/emanetli-ipoteka-krediti">Savings mortgage loan</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/depozitler/depozit-seyfi">Safe deposit box</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse6" aria-expanded="true" aria-controls="navCollapse6">Money transfers</button>
+                                        </h2>
+                                        <div id="navCollapse6" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/valyuta-tenzimlenmesi">Currency regulation</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/hesabdan-kocurmeler">Wire transfers</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/tecili-pul-kocurmeleri">Urgent transfers</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse7" aria-expanded="true" aria-controls="navCollapse7">Current account</button>
+                                        </h2>
+                                        <div id="navCollapse7" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/digihesab-max-acin">Open DigiHesab Max</a>
+                                                    <a href="https://abb-bank.az/en/digihesab-acin">Open DigiHesab</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/cari-hesab/cari-hesab-acin">Open a current account</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/cari-hesab/kassa-emeliyyatlari">Cash operations</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/cari-hesab/hesabiniza-nezaret-edin">Manage your account</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/cari-hesab/arayis-sifaris-edin">Order confirmation letter</a>
+                                                    <a href="https://abb-bank.az/en/ferdi/cari-hesab/mubadile-emeliyyatlari">Currency exchange</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse8" aria-expanded="true" aria-controls="navCollapse8">Payments</button>
+                                        </h2>
+                                        <div id="navCollapse8" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                            <div class="accordion-body">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="https://abb-bank.az/en/telefon">Telephone</a>
+                                                    <a href="https://abb-bank.az/en/mobil">Mobile</a>
+                                                    <a href="https://abb-bank.az/en/kommunal">Utility</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="container-fluid d-none d-lg-block position-relative border-bottom border-top" style="border-top-color: #f6f7f8">
+                <ul class="nav-underline d-flex gap-0 m-0 p-0">
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/kartlar">Cards</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 pl-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/debet-kartlari">Debit cards</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kredit-kartlari">Validation process for TamKart debit cards</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kartlar/personalizasiya">Credit cards</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/kreditler">Loans</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 me-5">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://kredit.abb-bank.az/en/cash-loan?utm_source=abb-bank.az&amp;utm_medium=online-loan&amp;utm_campaign=cash-loan">Get a loan online</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/avans-kredit-xetti">Advance credit line</a>
+                                    <a class="col-6" href="https://kredit.abb-bank.az/en/cash-loan?utm_source=abb-bank.az&amp;utm_medium=salary&amp;utm_campaign=cash-loan">Cash loan</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kreditler/avtomobil-krediti">Car loan</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kreditler/emanetci-kredit-limiti">Credit limit for depositors</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kreditler/emanetci-nagd-krediti">Cash loan for depositors</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kreditler/kart-uzre-kredit-limiti">Credit card limit</a>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center border-start border-[#ebebeb] ps-5 pe-4 ms-5">
+                                <div class="d-none d-xl-block">
+                                    <img src="https://abb-bank.az/storage/uploads/1596884229_Kredit_sub_iba.webp" alt="" />
+                                </div>
+                                <div class="ms-5">
+                                    <h4 class="fw-medium mb-3">Apply for a loan online</h4>
+                                    <p class="fs-6 mb-4">Cash loan that fits all your needs</p>
+                                    <a href="https://kredit.abb-bank.az/cash-loan?utm_source=abb-bank.az&amp;utm_medium=drop-down&amp;utm_campaign=cash-loan" target="_blank" class="btn btn-outline-dark fw-medium py-3 px-4">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/online-xidmetler">Online services</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://ibar.az/en/ferdi/bank-24-7/iba-mobile">ABB mobile - Mobile Bank</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/bank-24-7/abb-business-internet-bank">ABB Business Internet Bank</a>
+                                    <a class="col-6" href="https://randevu.abb-bank.az/">R@ndevu</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/onlayn-xidmetler/arayis-sifaris-edin">Order a certificate of account status</a>
+                                    <a class="col-6" href="https://ibabankpayment.3dsecure.az/en">Repay your loan</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/bank-24-7/atm">ATM</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/xidmetinizdeyik">We are at your service!</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/bank-24-7/odenis-terminali">Payment terminal</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/bank-24-7/cash-in-atmi">Cash-In ATM</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/bank-24-7/melumat-merkezi">Call Center 24/7</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/elektron-xidmetler">FAQ E-services</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/iane-et">Donate</a>
+                                </div>
+                            </div>
+                            <div class="col-7 offset-xl-1 d-flex align-items-center border-start border-[#ebebeb] ps-5 pe-4">
+                                <div class="d-none d-xl-block">
+                                    <img src="https://abb-bank.az/storage/uploads/1683531779_347x217-copy.webp" alt="" />
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="fs-24 fw-500 mt-0 mb-3">Investment with ABB mobile Easy for everyone!</h4>
+                                    <span class="fs-16 mb-3 d-flex">Take advantages of stock exchange opportunities</span>
+                                    <a href="https://abb-bank.az/az/abb-investisiya" target="_blank" class="btn btn-outline-dark fw-medium py-3 px-4 mt-2">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://abb-bank.az/en/ferdi/kampaniyalar">Campaigns</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/kesbek">Cashback</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kesbek/faydali-kesbek">"Faydalı cashback"</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kesbek/qaygicash-klubu">QayğıCash club</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/fayda-max">"Fayda Max"</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/kesbek/avtomatik-endirim">Automatic discount</a>
+                                </div>
+                            </div>
+                            <div class="col-7 d-flex align-items-center border-start border-[#ebebeb] ps-5 pe-4">
+                                <div class="d-none d-xl-block">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1709274336_347x217.webp" alt="" />
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="fs-24 fw-500 mt-0 mb-3">"Fayda Max" changes the rules of the game!</h4>
+                                    <span class="fs-16 mb-3 d-flex">Activate, complete the goals, benefit from the rewards.</span>
+                                    <a href="https://abb-bank.az/az/fayda-max" target="_blank" class="btn btn-outline-dark fw-medium py-3 px-4 mt-2">Find out more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/emanetler">Deposits</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/depozitler/klassik-emaneti">"Classic" term deposit</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/depozitler/digidepozit">DigiDeposit</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/depozitler/emanetin-sigortalanmasi">Deposit insurance</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/depozitler/emanetli-ipoteka-krediti">Savings mortgage loan</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/depozitler/depozit-seyfi">Safe deposit box</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://abb-bank.az/en/ferdi/kreditler/ipoteka-kreditleri">Mortgage</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri">Money transfers</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/valyuta-tenzimlenmesi">Currency regulation</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/hesabdan-kocurmeler">Wire transfers</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/tecili-pul-kocurmeleri">Urgent transfers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/ferdi/cari-hesab">Current account</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/digihesab-max-acin">Open DigiHesab Max</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/digihesab-acin">Open DigiHesab</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/cari-hesab/cari-hesab-acin">Open a current account</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/cari-hesab/kassa-emeliyyatlari">Cash operations</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/cari-hesab/hesabiniza-nezaret-edin">Manage your account</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/cari-hesab/arayis-sifaris-edin">Order confirmation letter</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/ferdi/cari-hesab/mubadile-emeliyyatlari">Currency exchange</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://abb-bank.az/en/odenisler">Payments</a>
+                        <div class="dropdown-menu row">
+                            <div class="col-5 col-xl-4 p-0">
+                                <div class="row gy-3">
+                                    <a class="col-6" href="https://abb-bank.az/en/telefon">Telephone</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/mobil">Mobile</a>
+                                    <a class="col-6" href="https://abb-bank.az/en/kommunal">Utility</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://abb-bank.az/en/melumatlandirma-standart-sertler">Charges, Fees and Standard Terms</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid pb-3">
+                <div class="swiper" id="mainSwiper">
+                    <div class="swiper-wrapper container gx-0">
+                        <div class="swiper-slide">
+                            <div class="row gx-0">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3 class="mt-0 mb-3 mb-lg-4 pt-5 pt-lg-0">ABB Biz is now at your service!</h3>
+                                        <h4 class="pb-3 pb-lg-4 mt-0">A mobile application designed for small businesses</h4>
+                                        <a href="https://abb-bank.az/en/xeberler/abb-kicik-sahibkarlar-ucun-yeni-tetbiq-teqdim-etdi" class="btn btn-outline-dark d-inline-block px-4 py-3 mt-lg-4"> More details </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 d-flex justify-content-center pt-5 pt-lg-0">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1723100243_500x500-slider.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row gx-0">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3 class="mt-0 mb-3 mb-lg-4 pt-5 pt-lg-0">DigiTransfer</h3>
+                                        <h4 class="pb-3 pb-lg-4 mt-0">Enjoy commission-free international transfers with DigiTransfer!</h4>
+                                        <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri/tecili-pul-kocurmeleri/digitransfer-pul-kocurme?utm_source=abb-bank.az+&utm_medium=slider&utm_campaign=digitransfer+" class="btn btn-outline-dark d-inline-block px-4 py-3 mt-lg-4"> Learn more </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 d-flex justify-content-center pt-5 pt-lg-0">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1730357378_untitled-3.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row gx-0">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3 class="mt-0 mb-3 mb-lg-4 pt-5 pt-lg-0">Tam DigiCard brings benefits!</h3>
+                                        <h4 class="pb-3 pb-lg-4 mt-0">Order a free Tam DigiCard for cashback, commission-free transfers, and double VAT refund!</h4>
+                                        <a href="https://cards.abb-bank.az/?Reference_ID=F67090801530054E053AC1F00840CBMP&utm_source=facebook&utm_medium=cpa&utm_campaign=spo&_gl=1*hwwb6r*_gcl_au*OTg4MTAyOTAwLjE3MTM3NjI4NDE.*_ga*MTQzMTE2MjQxMC4xNzAxOTUwODkx*_ga_XS2V03MMNQ*MTcxOTgyODc0OC4xMDYuMS4xNzE5ODM3OTIzLjQ0LjAuMA.." class="btn btn-outline-dark d-inline-block px-4 py-3 mt-lg-4"> Order now </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 d-flex justify-content-center pt-5 pt-lg-0">
+                                    <img src="https://abb-bank.az/storage/uploads/1713513384_tamdigi-slider-500x500.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row gx-0">
+                                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="text-center text-lg-start">
+                                        <h3 class="mt-0 mb-3 mb-lg-4 pt-5 pt-lg-0">"Fayda Max" changes the rules of the game!</h3>
+                                        <h4 class="pb-3 pb-lg-4 mt-0">Earn more as you spend with ABB mobile</h4>
+                                        <a href="https://abb-bank.az/en/fayda-max" class="btn btn-outline-dark d-inline-block px-4 py-3 mt-lg-4"> Learn more </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 d-flex justify-content-center pt-5 pt-lg-0">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1709272871_1000x1000.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination container gx-0 start-50 translate-middle-x text-lg-start justify-content-lg-start"></div>
+                </div>
+            </div>
+
+            <section class="py-5" id="quick-actions-section">
+                <div class="container pt-lg-5 mt-3 my-lg-4">
+                    <h2 class="my-0 pb-lg-4 pb-3">Quick actions</h2>
+                    <div class="row">
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">Tam DigiCard</h3>
+                                    <p class="mt-1 mb-3 fw-400">A digital and physical debit card with many advantages</p>
+                                    <div class="mt-auto">
+                                        <a href="https://cards.abb-bank.az/?Reference_ID=F67090801530054E053AC1F00840CBMP&amp;_gl=1*al1eli*_ga*MTAwNTUyMDU0Ni4xNzE3NzM4MzQy*_ga_XS2V03MMNQ*MTcxNzc1NTI0OC4yLjEuMTcxNzc1NjU4My41Ny4wLjA." class="btn btn-primary">Order now</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/files/1718092914_04.webp" alt="tam digicard" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">Cash loan</h3>
+                                    <p class="mt-1 mb-3 fw-400">Cash loan up to AZN 40 000 for all your needs</p>
+                                    <div class="mt-auto">
+                                        <a href="https://kredit.abb-bank.az/cash-loan?utm_source=abb-bank.az&amp;utm_medium=quick-actions&amp;utm_campaign=cash-loan" class="btn btn-primary">Get a loan</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/files/1643022201_1632142837-sade-kecidler-2.webp" alt="cash credit" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">DigiDeposit</h3>
+                                    <p class="mt-1 mb-3 fw-400">By creating a deposit account entirely online, you have the opportunity to earn up to 11% annual income</p>
+                                    <div class="mt-auto">
+                                        <a href="https://abb-bank.az/en/ferdi/depozitler/digidepozit" class="btn btn-primary">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/files/1723100043_abb-biz-kecid.webp" alt="abb biz" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">TamKart</h3>
+                                    <p class="mt-1 mb-3 fw-400">An interest-free installment card for everyone with the possibility of partial payment up to 30 months</p>
+                                    <div class="mt-auto">
+                                        <a href="https://kredit.abb-bank.az/tamkart?utm_source=abb-bank.az&amp;utm_medium=quick-actions&amp;utm_campaign=tamkart" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-primary">Order TamKart</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/1632142837_sade-kecidler-2.webp" alt="tamkart" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">Investment</h3>
+                                    <p class="mt-1 mb-3 fw-400">Wide opportunities for buying and selling shares and investment fund shares are available on ABB mobile</p>
+                                    <div class="mt-auto">
+                                        <a href="https://abb-bank.az/en/abb-investisiya" class="btn btn-primary">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/files/1718092942_01.webp" alt="İnvestisiya" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 rounded mb-3 mb-lg-4">
+                            <div class="bg-gray-gradient d-flex h-100 rounded-2">
+                                <div class="col-lg-8 d-flex flex-column col-8 py-lg-4 ps-lg-4 py-4 ps-3">
+                                    <h3 class="m-0 fw-500">Mortgage loan</h3>
+                                    <p class="mt-1 mb-3 fw-400">Affordable domestic mortgage loans for more than 15 categories to suit everyone</p>
+                                    <div class="mt-auto">
+                                        <a href="https://abbhome.az/" class="btn btn-primary">Apply now</a>
+                                    </div>
+                                </div>
+                                <div class="col-4 d-flex p-0">
+                                    <figure class="d-flex h-100 justify-content-end w-100">
+                                        <img src="https://abb-bank.az/storage/uploads/files/1718092962_03.webp" alt="İpoteka krediti" class="object-fit-cover h-100 rounded-end align-self-end" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 bg-[#f9f9f9]">
+                <div class="container py-lg-5 mt-3 my-lg-4">
+                    <div class="row">
+                        <div class="col-lg-5 order-lg-1 order-2 mb-3 mb-lg-0">
+                            <h2 class="fs-1 pb-1 mb-2 mb-lg-3">Find out your credit limit:</h2>
+                            <p class="mt-0 mb-4 fw-medium">Get a loan up to 40 000 AZN without commission!</p>
+                            <form action="" id="loanForm">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="finCodeInput" placeholder="Your FIN code" />
+                                    <label for="finCodeInput">FIN code *</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phoneInput" placeholder="Your mobile phone number" />
+                                    <label for="phoneInput">Mobile phone number *</label>
+                                </div>
+                                <div class="d-flex align-items-start py-3">
+                                    <input type="checkbox" class="form-check-input border-primary me-2 p-2" />
+                                    <p class="text-[#5B5C5E]">
+                                        I agree to provide ABB with data about my loan history from
+                                        <a href="https://abb-bank.az/storage/uploads/E2E%20kredit/AKB-PDF%20(1).pdf">Azerbaijan Credit Bureau</a>
+                                        and to provide with my identity document, place of work, salary and other information through
+                                        <a href="https://abb-bank.az/storage/uploads/E2E%20kredit/Raziliq1Esas%20(1).pdf">ASAN Finance/E-GOV</a>
+                                        system
+                                    </p>
+                                </div>
+                                <button class="btn btn-primary py-2 w-100" disabled type="submit">Continue</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-7 d-flex justify-content-center order-lg-2 col-lg-2 order-1 mb-4 mb-lg-0">
+                            <img src="https://abb-bank.az/storage/uploads/files/1713765158_kredit-banner-final.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5" id="loan-calculator-section">
+                <div class="container">
+                    <div class="col-lg-10 mx-lg-auto">
+                        <h2 class="fs-1 fw-semibold mb-4 mb-lg-5 text-[#262626]">Loan calculator</h2>
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <div class="border rounded p-3 p-lg-4 position-relative">
+                                        <div class="d-flex justify-content-between text-[1.125rem] py-1 py-lg-0">
+                                            <span class="col-6 text-[#666] fw-light">Loan amount</span>
+                                            <span class="col-6 d-flex justify-end align-center text-end fw-medium">
+                                                <input class="outline-0 text-right w-100 pe-2" id="loan-range-slider-val-0" value="5000" maxlength="5" type="text" aria-label="Loan amount" />
+                                                AZN
+                                            </span>
+                                        </div>
+                                        <input id="loan-range-slider-0" type="range" aria-label="Loan amount" min="300" max="40000" value="5000" />
+                                    </div>
+                                    <div class="d-flex justify-content-between fw-light text-[.875rem] pt-2">
+                                        <span>300</span>
+                                        <span>40000</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="border rounded p-3 p-lg-4 position-relative">
+                                        <div class="d-flex justify-content-between text-[1.125rem] py-1 py-lg-0">
+                                            <span class="col-6 text-[#666] fw-light">Loan term</span>
+                                            <span class="col-6 d-flex justify-end align-center text-end fw-medium">
+                                                <input class="outline-0 text-right w-100 pe-2" id="loan-range-slider-val-1" value="6" maxlength="2" type="text" aria-label="Loan term" />
+                                                months
+                                            </span>
+                                        </div>
+                                        <input id="loan-range-slider-1" type="range" aria-label="Loan term" min="3" max="59" value="6" />
+                                    </div>
+                                    <div class="d-flex justify-content-between fw-light text-[.875rem] pt-2">
+                                        <span>3 months</span>
+                                        <span>59 months</span>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="border rounded p-3 p-lg-4 position-relative">
+                                        <div class="d-flex justify-content-between text-[1.125rem] py-1 py-lg-0">
+                                            <span class="col-6 text-[#666] fw-light">Interest rate</span>
+                                            <span class="col-6 d-flex justify-end align-center text-end fw-medium">
+                                                <input class="outline-0 text-right w-100 pe-2" id="loan-range-slider-val-2" value="10.9" maxlength="2" type="text" aria-label="Interest rate" />
+                                                %
+                                            </span>
+                                        </div>
+                                        <input id="loan-range-slider-2" type="range" aria-label="Interest rate" min="10.9" max="31.9" step="0.1" value="10.9" />
+                                    </div>
+                                    <div class="d-flex justify-content-between fw-light text-[.875rem] pt-2">
+                                        <span>10.9%</span>
+                                        <!-- <span>31.9%</span> -->
+                                    </div>
+                                </div>
+                                <span class="fw-light d-none d-lg-block">Initial calculation</span>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ps-lg-5 pb-4">
+                                    <div class="d-flex d-lg-inline-flex flex-lg-column pb-4">
+                                        <div class="pe-3">
+                                            <h2 class="fs-1">
+                                                <span id="monthly-payment">860.03</span>
+                                                ₼
+                                            </h2>
+                                            <span class="fw-medium">Monthly payment</span>
+                                        </div>
+                                        <div class="d-none d-lg-block border-top my-4"></div>
+                                        <div>
+                                            <h2 class="fs-1">
+                                                <span id="total-payment">5160.18</span>
+                                                ₼
+                                            </h2>
+                                            <span class="fw-medium">Total amount</span>
+                                        </div>
+                                    </div>
+                                    <hr class="d-lg-none m-0" />
+                                </div>
+                                <div class="d-flex flex-column flex-lg-row py-3 py-lg-4 ps-lg-5">
+                                    <a href="https://kredit.abb-bank.az/cash-loan?utm_source=abb-bank.az&amp;utm_medium=loan-calc&amp;utm_campaign=cash-loan" class="btn btn-primary fw-medium py-3 px-4">Get a loan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 bg-[#F5F5F5] overflow-hidden">
+                <div class="container">
+                    <h2 class="text-black fw-bold mb-4">Services</h2>
+                    <div id="servicesSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="https://ibar.az/en/xidmet-shebekesi/filiallar" class="bg-white rounded h-100 d-flex flex-column align-items-center px-6 py-8">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1718088594_1717761390-rectangle-2.webp" width="132px" height="132px" alt="" />
+                                    <h5 class="fw-semibold">Offices &amp; ATMs</h5>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://randevu.abb-bank.az/?_gl=1*1seayg8*_gcl_au*MjA3OTMyOTk2LjE3MzgwMDQ2MjA.*_ga*MTA0NTYwMzcwMC4xNzM4MDA0NjIw*_ga_XS2V03MMNQ*MTczODM0MTY1My4xMi4xLjE3MzgzNDE2OTUuMTguMC4w" class="bg-white rounded h-100 d-flex flex-column align-items-center px-6 py-8">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1717761406_rectangle-2-2.webp" width="132px" height="132px" alt="" />
+                                    <h5 class="fw-semibold">Online appointment</h5>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://abb-bank.az/en/ferdi/bank-24-7/melumat-merkezi" class="bg-white rounded h-100 d-flex flex-column align-items-center px-6 py-8">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1717761471_rectangle-2-1.webp" width="132px" height="132px" alt="" />
+                                    <h5 class="fw-semibold">Call Center</h5>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://ibabankpayment.3dsecure.az/payment/type/IBA" class="bg-white rounded h-100 d-flex flex-column align-items-center px-6 py-8">
+                                    <img src="https://abb-bank.az/storage/uploads/files/1718088826_1717761482-rectangle-2-3.webp" width="132px" height="132px" alt="" />
+                                    <h5 class="fw-semibold">Loan payment</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5" id="converter-section">
+                <div class="container pt-3 py-lg-5">
+                    <div class="col-lg-10 mx-lg-auto">
+                        <h2 class="mb-2 mb-lg-5 pb-lg-4">Currency rates</h2>
+
+                        <span class="fw-medium text-[.8rem] text-[#666] d-lg-none">Last updated: 31.01.2025</span>
+
+                        <div class="pt-4">
+                            <div class="row gy-5">
+                                <div class="col-lg-6">
+                                    <table class="w-100 border-bottom pb-2 pb-lg-4">
+                                        <tbody>
+                                            <tr class="d-flex text-start pb-4 pb-lg-5">
+                                                <th class="col-5 fw-medium">Currency</th>
+                                                <th class="col-4 fw-medium">Sell</th>
+                                                <th class="col-3 fw-medium">Buy</th>
+                                            </tr>
+                                            <tr class="fs-2 d-flex pb-2 pb-lg-4 fw-light">
+                                                <td class="col-5 fw-semibold">
+                                                    <span>USD</span>
+                                                </td>
+                                                <td class="col-4 d-flex align-items-center">
+                                                    <span class="me-1">1.7020</span>
+                                                    <span class="icon icon-05x icon--"></span>
+                                                </td>
+                                                <td class="col-3 d-flex align-items-center">
+                                                    <span class="me-1">1.6970</span>
+                                                    <span class="icon icon-05x icon--"></span>
+                                                </td>
+                                            </tr>
+                                            <tr class="fs-2 d-flex pb-2 pb-lg-4 fw-light">
+                                                <td class="col-5 fw-semibold">
+                                                    <span>EUR</span>
+                                                </td>
+                                                <td class="col-4 d-flex align-items-center">
+                                                    <span class="me-1">1.7747</span>
+                                                    <span class="icon icon-05x icon-down"></span>
+                                                </td>
+                                                <td class="col-3 d-flex align-items-center">
+                                                    <span class="me-1">1.7306</span>
+                                                    <span class="icon icon-05x icon-down"></span>
+                                                </td>
+                                            </tr>
+                                            <tr class="fs-2 d-flex pb-2 pb-lg-4 fw-light">
+                                                <td class="col-5 fw-semibold">
+                                                    <span>100 RUB</span>
+                                                </td>
+                                                <td class="col-4 d-flex align-items-center">
+                                                    <span class="me-1">1.9900</span>
+                                                    <span class="icon icon-05x icon-up"></span>
+                                                </td>
+                                                <td class="col-3 d-flex align-items-center">
+                                                    <span class="me-1">1.4700</span>
+                                                    <span class="icon icon-05x icon-up"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <span class="fw-medium text-[#666] d-none d-lg-block">Last updated: 31.01.2025</span>
+                                        <a href="https://abb-bank.az/en/valyuta-mezenneleri">All currency rates</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 ps-lg-3">
+                                    <div class="pb-4 ps-lg-3">
+                                        <h4 class="fw-medium mb-4 pb-lg-2">Currency converter</h4>
+
+                                        <div class="border p-3 px-lg-4 rounded position-relative mb-3">
+                                            <div class="flex content-between items-center js-currency-calc">
+                                                <label class="col-9 col-md-10 col-lg-9 d-flex">
+                                                    <input type="number" name="sell" placeholder="I would like to sell" class="form-control" />
+                                                    <span class="vr"></span>
+                                                </label>
+
+                                                <span class="col-3 col-md-2 col-lg-3 d-flex justify-content-end">
+                                                    <select class="selectric-tooltip" id="selectric-currency-1" data-previous-value="USD" aria-label="Currency" tabindex="-1">
+                                                        <option value="USD">USD</option>
+                                                        <option value="AZN">AZN</option>
+                                                        <option value="RUB">RUB</option>
+                                                        <option value="EUR">EUR</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="border p-3 px-lg-4 rounded position-relative">
+                                            <div class="flex content-between items-center js-currency-calc">
+                                                <label class="col-9 col-md-10 col-lg-9 d-flex">
+                                                    <input type="number" name="buy" placeholder="I will get" class="form-control" />
+                                                    <span class="vr"></span>
+                                                </label>
+
+                                                <span class="col-3 col-md-2 col-lg-3 d-flex justify-content-end">
+                                                    <select class="selectric-tooltip" id="selectric-currency-2" data-previous-value="AZN" aria-label="Currency" tabindex="-1">
+                                                        <option value="AZN">AZN</option>
+                                                        <option value="USD">USD</option>
+                                                        <option value="RUB">RUB</option>
+                                                        <option value="EUR">EUR</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 bg-[#F5F5F5]">
+                <div class="container px-3">
+                    <div class="flex justify-between items-center pb-4">
+                        <h2 class="fw-bold text-black">News</h2>
+                        <a href="https://abb-bank.az/en/xeberler" class="fw-medium flex items-center gap-1">
+                            <span>All news</span>
+                            <i class="fas fa-chevron-right fa-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <a class="rounded-3 bg-white fw-medium p-6 flex flex-col justify-between gap-16 h-100" href="https://abb-bank.az/en/socar-in-yasil-istiqrazlari-abb-mobile-tetbiqinde">
+                                <span class="text-[1.1rem]">SOCAR-ın “Yaşıl” istiqrazları ABB mobile tətbiqində!</span>
+                                <span class="text-[.75rem] text-[#757575]"> 23.01.2025 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="rounded-3 bg-white fw-medium p-6 flex flex-col justify-between gap-16 h-100" href="https://abb-bank.az/en/abb-biznes-proseslerinde-sima-imza-nin-genis-tetbiqine-basladi090125">
+                                <span class="text-[1.1rem]">ABB biznes proseslərində SİMA İmza-nın geniş tətbiqinə başladı</span>
+                                <span class="text-[.75rem] text-[#757575]"> 09.01.2025 </span>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="rounded-3 bg-white fw-medium p-6 flex flex-col justify-between gap-16 h-100" href="https://abb-bank.az/en/abbas-ibrahimov-bu-il-ilk-defe-olaraq-35-minden-artiq-sehmdarimizla-vetendaslarimizla-gelirlerimizi-boluseceyik">
+                                <span class="text-[1.1rem]">Abbas İbrahimov: “Bu il ilk dəfə olaraq 35 mindən artıq səhmdarımızla, vətəndaşlarımızla gəlirlərimizi bölüşəcəyik”</span>
+                                <span class="text-[.75rem] text-[#757575]"> 17.01.2025 </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container py-5" id="digital-products-section">
+                <h2 class="text-black fw-bold mb-4">Digital products</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="rounded-4 row g-4 m-0 overflow-hidden p-4 p-lg-0 bg-[#1461c5]">
+                            <div class="col-lg-6 order-1 order-lg-2 flex justify-center rounded-4 bg-[#FFFFFF16] lg:bg-transparent lg:justify-end items-end">
+                                <img src="https://abb-bank.az/storage/uploads/1717582812_image1-1.webp" alt="" class="h-[180px] lg:h-[204px]" />
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-1 flex flex-col justify-between gap-4 p-lg-4 mt-lg-0">
+                                <div class="lg:max-w-[250px]">
+                                    <span class="fw-semibold text-white text-[1.25rem]/[1.5rem]">ABB mobile</span>
+                                    <p class="text-white text-[.9rem]/[1.15rem]">Simple and fast banking application service that you can use anytime and anywhere</p>
+                                </div>
+                                <div class="flex gap-[1.125rem] items-center">
+                                    <a href="https://play.google.com/store/apps/details?id=iba.mobilbank" class="flex" aria-label="store icon">
+                                        <span class="icon icon-play-store icon-2x"></span>
+                                    </a>
+                                    <a href="https://apps.apple.com/az/app/iba-mobile/id1251456175" class="flex" aria-label="store icon">
+                                        <span class="icon icon-app-store icon-2x"></span>
+                                    </a>
+                                    <a href="https://appgallery.huawei.com/app/C105078433" class="flex" aria-label="store icon">
+                                        <span class="icon icon-huawei icon-2x"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded-4 row g-4 m-0 overflow-hidden p-4 p-lg-0 bg-[#0024a3]">
+                            <div class="col-lg-6 order-1 order-lg-2 flex justify-center rounded-4 bg-[#FFFFFF16] lg:bg-transparent lg:justify-end items-end">
+                                <img src="https://abb-bank.az/storage/uploads/files/1717582977_image1-2.webp" alt="" class="h-[180px] lg:h-[204px]" />
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-1 flex flex-col justify-between gap-4 p-lg-4 mt-lg-0">
+                                <div class="lg:max-w-[250px]">
+                                    <span class="fw-semibold text-white text-[1.25rem]/[1.5rem]">Carry out your business transactions with ABB Business Internet Bank</span>
+                                    <p class="text-white text-[.9rem]/[1.15rem]"></p>
+                                </div>
+                                <div>
+                                    <a href="https://cb.abb-bank.az/" class="btn btn-light text-[.75rem] fw-semibold py-2 px-3">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded-4 row g-4 m-0 overflow-hidden p-4 p-lg-0 bg-[#114090]">
+                            <div class="col-lg-6 order-1 order-lg-2 flex justify-center rounded-4 bg-[#FFFFFF16] lg:bg-transparent lg:justify-end items-end">
+                                <img src="https://abb-bank.az/storage/uploads/1717583022_image1-3.webp" alt="" class="h-[180px] lg:h-[204px]" />
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-1 flex flex-col justify-between gap-4 p-lg-4 mt-lg-0">
+                                <div class="lg:max-w-[250px]">
+                                    <span class="fw-semibold text-white text-[1.25rem]/[1.5rem]">Business convenience is with you everywhere with the Mobile POS service</span>
+                                    <p class="text-white text-[.9rem]/[1.15rem]">Speed up your business process with ABB mobile POS service</p>
+                                </div>
+                                <div class="flex gap-[1.125rem] items-center">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ibagroup.abbtoken&amp;hl=en" class="flex" aria-label="store icon">
+                                        <span class="icon icon-play-store icon-2x"></span>
+                                    </a>
+                                    <a href="" class="flex" aria-label="store icon"><span class="icon icon- icon-2x"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded-4 row g-4 m-0 overflow-hidden p-4 p-lg-0 bg-[#096ceb]">
+                            <div class="col-lg-6 order-1 order-lg-2 flex justify-center rounded-4 bg-[#FFFFFF16] lg:bg-transparent lg:justify-end items-end">
+                                <img src="https://abb-bank.az/storage/uploads/1717583072_image1-4.webp" alt="" class="h-[180px] lg:h-[204px]" />
+                            </div>
+                            <div class="col-lg-6 order-2 order-lg-1 flex flex-col justify-between gap-4 p-lg-4 mt-lg-0">
+                                <div class="lg:max-w-[250px]">
+                                    <span class="fw-semibold text-white text-[1.25rem]/[1.5rem]">Take advantage of investment opportunities</span>
+                                    <p class="text-white text-[.9rem]/[1.15rem]">Wide range of opportunities for buying and selling shares and investment fund shares</p>
+                                </div>
+                                <div>
+                                    <a href="https://abb-bank.az/en/abb-investisiya" class="btn btn-light text-[.75rem] fw-semibold py-2 px-3">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="pt-5 mt-4 mt-lg-5">
+            <div class="border-top mt-4 d-none bg-white d-lg-block">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between py-3">
+                        <a class="text-primary fs-5" href="#">
+                            <i class="fas fa-building-columns me-1"></i>
+                            Bank
+                        </a>
+                        <a href="https://cb.abb-bank.az/login/en" class="d-flex align-items-center gap-2">
+                            <img src="img/icons/internet-banking.svg" alt="" />
+                            <span class="fw-semibold">Internet banking</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="border-top bg-white d-lg-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-between py-4">
+                            <a class="text-primary" href="https://abb-bank.az/en" aria-label="ABB">
+                                <i class="fas fa-building-columns me-1"></i>
+                                Bank
+                            </a>
+                            <a href="tel:937" class="d-flex align-items-center gap-1">
+                                <span class="fas fa-phone text-[#666]"></span>
+                                <span class="text-[1.125rem] fw-semibold text-[#666]">937</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#f9f9f9] py-4">
+                <div class="container mt-lg-3">
+                    <!-- Mobile -->
+                    <div class="row d-lg-none">
+                        <div class="col-12">
+                            <div class="breadcrumb d-inline-flex flex-wrap">
+                                <a href="https://abb-bank.az/en/ferdi" class="text-[#262626] fw-semibold breadcrumb-item mb-3">Personal</a>
+                                <a href="https://abb-bank.az/en/haqqimizda" class="opacity-50 text-[#262626] fw-semibold breadcrumb-item mb-3">About us</a>
+                                <a href="https://abb-bank.az/en/kicik-biznes" class="opacity-50 text-[#262626] fw-semibold breadcrumb-item mb-3">Small Business</a>
+                                <a href="https://abb-bank.az/en/investorlarla-elaqe" class="opacity-50 text-[#262626] fw-semibold breadcrumb-item mb-3">Investor Relations</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes" class="opacity-50 text-[#262626] fw-semibold breadcrumb-item mb-3">SME</a>
+                                <a href="https://abb-bank.az/en/korporativ" class="opacity-50 text-[#262626] fw-semibold breadcrumb-item mb-3">Corporate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="row pb-3 pb-lg-4 hover-link-underline">
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">Personal</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/ferdi/kartlar">Cards</a>
+                                <a href="https://abb-bank.az/en/ferdi/kreditler">Loans</a>
+                                <a href="https://abb-bank.az/en/ferdi/online-xidmetler">Online services</a>
+                                <a href="https://abb-bank.az/en/ferdi/kampaniyalar">Campaigns</a>
+                                <a href="https://abb-bank.az/en/ferdi/kesbek">Cashback</a>
+                                <a href="https://abb-bank.az/en/ferdi/emanetler">Deposits</a>
+                                <a href="https://abb-bank.az/en/ferdi/kreditler/ipoteka-kreditleri">Mortgage</a>
+                                <a href="https://abb-bank.az/en/ferdi/pul-kocurmeleri">Money transfers</a>
+                                <a href="https://abb-bank.az/en/ferdi/cari-hesab">Current account</a>
+                                <a href="https://abb-bank.az/en/odenisler">Payments</a>
+                                <a href="https://abb-bank.az/en/sual-cavab">Q&amp;A section</a>
+                                <a href="https://abb-bank.az/en/melumatlandirma-standart-sertler">Charges, Fees and Standard Terms</a>
+                                <a href="https://abb-bank.az/en/faydali-linkler">Faydalı linklər</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">About us</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/haqqimizda/missiya-ve-strateji-baxis">Mission and strategic vision</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/rehberlik">Management</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/melumatlarin-aciqlanmasi">Information disclosure</a>
+                                <a href="https://abb-bank.az/en/brend-merkezi">Brand center</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/istirak-payi">Ownership in subsidiaries and associate companies</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/muxbir-banklar">Correspondent Banks</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/komplayns">Financial monitoring and compliance</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/insan-resurslari">Human Resources</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/korporativ-sosial-mesuliyyet">Corporate Social Responsibility / Sponsorship</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/siyasetlerimiz">Our policies</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/mukafatlar">Awards</a>
+                                <a href="https://abb-bank.az/en/haqqimizda/teklif-ve-sikayetler">Proposals and complaints</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">Small Business</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/kicik-biznes/onlayn-kreditler">Online loans</a>
+                                <a href="https://abb-bank.az/en/kicik-biznes/odenis-sistemleri">Payment systems</a>
+                                <a href="https://abb-bank.az/en/kicik-biznes/gundelik-bankciliq">Daily banking</a>
+                                <a href="https://abb-bank.az/en/kicik-biznes/e-muhasibim">E-muhasibim</a>
+                                <a href="https://abb-bank.az/en/kicik-biznes/ferdi-musteri-temsilciliyi">Personal relationship management</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">Investor Relations</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/abb-sehmler">Acquire ABB shares from ABB mobile!</a>
+                                <a href="https://abb-bank.az/en/hesabatlar">Reports</a>
+                                <a href="https://abb-bank.az/en/maliyye-ve-investisiya/sehmdarlar">Shareholders</a>
+                                <a href="https://abb-bank.az/en/maliyye-ve-investisiya/reytinqler">Ratings</a>
+                                <a href="https://abb-bank.az/en/investorlarla-elaqe/korporativ-teqdimat">Corporate presentations</a>
+                                <a href="https://abb-bank.az/en/maliyye-ve-investisiya/diger-melumatlar">Other information</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">SME</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/biznes-kreditleri">Business loans</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/mesafeden-hesab-ac">Open account online</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/iba-link">ABB Link</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/xidmet-paketleri">Service packages</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/odenis-kartlari">Cards</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/senedli-emeliyyatlar">Trade finance</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/kocurmeler">Transfers</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/elektron-bankciliq">E-banking</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/hesablar">Accounts</a>
+                                <a href="https://abb-bank.az/en/kicik-ve-orta-biznes/emanetler">Deposits</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none d-lg-block">
+                            <h5 class="mt-2 pe-3">Corporate</h5>
+                            <div class="d-flex flex-column gap-3 pe-3 text-[#666] fw-light">
+                                <a href="https://abb-bank.az/en/korporativ/korporativ-kreditler">Corporate loans</a>
+                                <a href="https://abb-bank.az/en/korporativ/mesafeden-hesab-ac">Open account online</a>
+                                <a href="https://abb-bank.az/en/korporativ/odenis-kartlari">Сards</a>
+                                <a href="https://abb-bank.az/en/korporativ/emekhaqqi-layihesi">Salary project</a>
+                                <a href="https://abb-bank.az/en/korporativ/senedli-emeliyyatlar">Trade finance</a>
+                                <a href="https://abb-bank.az/en/korporativ/elektron-bankciliq">E-banking</a>
+                                <a href="https://abb-bank.az/en/korporativ/kocurmeler">Transfers</a>
+                                <a href="https://abb-bank.az/en/korporativ/hesablar">Accounts</a>
+                                <a href="https://abb-bank.az/en/korporativ/emanetler">Deposits</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <h5 class="my-2 mb-lg-4 pb-1 pb-lg-0 pe-3">Contacts</h5>
+
+                            <div class="d-flex flex-column gap-2 gap-lg-3 fw-light pe-3">
+                                <span>67, Nizami str., AZ1005 Baku, Azerbaijan</span>
+                                <span>Tel.: <a href="tel:0124930091" class="text-[#262626]">(+994 12) 493 00 91</a></span>
+                                <span>Fax: <a href="fax:0124934091" class="text-[#262626]">(+994 12) 493 40 91</a></span>
+                                <span>E-mail: <a href="mailto:info@abb-bank.az" class="text-[#262626]">info@abb-bank.az</a></span>
+
+                                <span class="mb-lg-3 d-none d-lg-block">
+                                    <a href="tel:937" class="d-inline-flex align-items-center text-[#262626]">
+                                        <span class="fas fa-phone square-12"></span>
+                                        <span class="ms-2 text-[1.125rem] fw-semibold">937</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="d-none d-lg-flex mt-lg-2 mb-lg-5 gap-2">
+                        <a href="https://apps.apple.com/az/app/iba-mobile/id1251456175" class="d-flex align-items-center p-3 bg-[#ececec] text-[#666] rounded">
+                            <span class="fab fa-app-store-ios fs-4 text-[#626262]"></span>
+                            <div class="ms-2">
+                                <span class="d-block fw-500 text-[.5rem]">Download on the </span>
+                                <span class="d-block fw-500 text-[.875rem]">App Store</span>
+                            </div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=iba.mobilbank" class="d-flex align-items-center p-3 bg-[#ececec] text-[#666] rounded">
+                            <span class="fab fa-google-play fs-4 text-[#626262]"></span>
+                            <div class="ms-2">
+                                <span class="d-block fw-500 text-[.5rem]">Get it on </span>
+                                <span class="d-block fw-500 text-[.875rem]">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="row mb-lg-2 flex-column-reverse flex-lg-row align-items-center">
+                        <div class="col-12 col-lg-4">
+                            <span class="fw-light text-[#585858] text-[.85rem]">© ABC - All rights reserved</span>
+                        </div>
+
+                        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                            <div class="d-flex justify-content-lg-center gap-3">
+                                <a rel="nofollow noopener noreferrer" target="_blank" aria-label="infobank.az" href="https://infobank.az/">
+                                    <img height="26" src="https://abb-bank.az/img/logo-infobank.webp" alt="infobank.az" />
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" aria-label="virtualkarabakh.az" href="http://www.virtualkarabakh.az/">
+                                    <img height="26" src="https://abb-bank.az/img/logo-virtual-qarabag.webp" alt="virtualkarabakh.az" />
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" aria-label="adif.az" href="https://adif.az/">
+                                    <img height="26" src="https://abb-bank.az/img/yenilogo.webp" alt="adif.az" />
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" aria-label="bizimpullar.az" href="https://bizimpullar.az/">
+                                    <img height="26" src="https://abb-bank.az/img/logo-msp.webp" alt="bizimpullar.az" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-lg-none">
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://apps.apple.com/az/app/iba-mobile/id1251456175" class="d-flex align-items-center p-3 bg-[#ececec] text-[#666] rounded">
+                                    <i class="fab fa-app-store-ios fs-4 text-[#626262]"></i>
+                                    <div class="ms-2">
+                                        <span class="d-block fw-500 text-[.5rem]">Download</span>
+                                        <span class="d-block fw-500 text-[.875rem]">App Store</span>
+                                    </div>
+                                </a>
+
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=iba.mobilbank" class="d-flex align-items-center p-3 bg-[#ececec] text-[#666] rounded">
+                                    <i class="fab fa-google-play fs-4 text-[#626262]"></i>
+                                    <div class="ms-2">
+                                        <span class="d-block fw-500 text-[.5rem]">Download</span>
+                                        <span class="d-block fw-500 text-[.875rem]">Google Play</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-lg-end align-items-center">
+                            <div class="social">
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.instagram.com/abb_bank/" aria-label="icon-ig">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.facebook.com/abbbank.az" aria-label="icon-fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.youtube.com/c/abbaz" aria-label="icon-youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://twitter.com/abb_bank" aria-label="icon-x">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/the-international-bank-of-azerbaijan/" aria-label="icon-linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+
+                            <div class="d-none d-lg-block ms-3">
+                                <select name="lang" class="selectric-tooltip label-text-[.875rem]" id="js-selectric-lang-footer" aria-label="Language" tabindex="-1">
+                                    <option value="az" data-url="https://abb-bank.az/az/ferdi">AZ</option>
+                                    <option selected class="d-none" value="uk" data-url="https://abb-bank.az/en/ferdi">EN</option>
+                                    <option value="ru" data-url="https://abb-bank.az/ru/ferdi">RU</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="overlay"></div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.js" integrity="sha512-BUlWdwDeJo24GIubM+z40xcj/pjw7RuULBkxOTc+0L9BaGwZPwiwtbiSVzv31qR7TWx7bs6OPTE5IyfLOorboQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
